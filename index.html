@@ -22,7 +22,7 @@
 
           <h1>Formulário de matrícula</h1>
           <p>Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.</p>
-          <form action="" method="post">
+          <form action="" method="post" enctype="multipart/form-data">
             <fieldset class="child-info">
               <legend>Informações da criança</legend>
 
@@ -48,11 +48,12 @@
               </select>
               </div>
               
-
               <div class="textarea-wrapper">
                 <label for="medical-info">Informações médicas</label>
-                <textarea name="medical-info" id="medical-info"
-                cols="30"  rows="5"
+                <textarea name="medical-info" 
+                id="medical-info"
+                cols="30"  
+                rows="5"
                 placeholder="A criança possui alguma condiação médica que a escola deve estar ciente ? (Se sim, especifique)"
                 ></textarea>
               </div>
@@ -68,7 +69,9 @@
                   <path d="M24 26V42M24 26C22.5996 26 19.9831 29.9886 19 31M24 26C25.4004 26 28.017 29.9886 29 31" stroke="#D6D3D1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                   </svg>
                   
-                <p>clique aqui  <br>para selecionar os arquivos</p>
+                <p>clique aqui  
+                  <br>para selecionar os arquivos
+                </p>
               </div>
               </div>
             </fieldset>
@@ -84,13 +87,17 @@
                 <div class="flex">
                   <div class="input-wrapper flex-2">
                     <label for="street">Rua</label>
-                    <input type="text" id="street" name="street"
-                    value="Rua das Flores" disabled>
+                    <input type="text" id="street" 
+                    name="street"
+                    value="Rua das Flores" 
+                    disabled>
                   </div>
 
                   <div class="input-wrapper flex-1">
                     <label for="numero">Número</label>
-                    <input type="text" id="numero" name="numero">
+                    <input type="text" 
+                    id="numero" 
+                    name="numero">
                   </div>
                 </div>
 
@@ -103,7 +110,8 @@
 
                   <div class="input-wrapper flex-1">
                     <label for="state">Estado</label>
-                    <input type="text" id="state" name="state" disabled
+                    <input type="text" id="state" name="state" 
+                    disabled
                     value="SP">
                   </div>
               </div>
@@ -126,40 +134,41 @@
 
                 <div class="input-wrapper">
                   <label for="email">Email</label>
-                  <input type="email" name="email"
+                  <input type="email" name="mail" id="mail"
                   required>
                   <div class="error">
-                    <img src="/assets/icons/alert-circle.svg" alt="Ícone de alerte vermelho">
+                    <img src="/assets/icons/alert-circle.svg"
+                     alt="Ícone de alerte vermelho">
                     <span>Insira um e-mail válido</span>
                   </div>
                 </div>
             </fieldset>
-          </form>
 
-          <fieldset class="enroll-options">
-            <legend>Opções de matrícula</legend>
-            <div class="input-wrapper">
-              <label>Selecione o tudo de estudo</label>
+            <fieldset class="enroll-options">
+              <legend>Opções de matrícula</legend>
 
-              <div class="radio-wrapper">
+              <div class="input-wrapper">
+                <label>Selecione o tudo de estudo</label>
+
+               <div class="radio-wrapper">
                 <div class="radio-inner">
-                  <div class="radio-img"></div>
-                <input type="radio" name="study-shift" id="morning"
-                value="morning">
+                  <div class="radio-image"></div>
+                  <input type="radio" name="study-shift"
+                  value="mornig" id="morinig">
                   <img src="assets/icons/sun-cloud-02.svg" alt="ícone de sol com nuvem">
-                <label for="morning">Manhã</label>
+                  <label for="morinig">Manhã</label>
                 </div>
 
-                <div class="radio-inner"></div>
-                  <div class="radio-img"></div>
-                <input type="radio" name="study-shift" id="evening"
-                value="evening">
-                  <img src="assets/icons/sun-cloud-02.svg" alt="ícone de sol com nuvem">
-                <label for="evening">Tarde</label>
-                </div>
+                <div class="radio-inner">
+                  <div class="radio-image"></div>
+                  <input type="radio" name="study-shift"
+                  value="evening" id="evening">
+                  <img src="assets/icons/sun-02.svg" alt="ícone de sol com nuvem">
+                  <label for="evening">Tarde</label>
+                </div> 
               </div>
-            </div>
-          </fieldset>
+            </fieldset>
+          </form>
       </div>
     </main>
 
