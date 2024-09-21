@@ -14,7 +14,7 @@ label {
   color: var(--text-secondary);
   /*Sem o block ele é do tipo in-line e in-line não aceita margin-bottom */
   display: block;
-  margin-bottom: 1.rem;
+  margin-bottom: .25rem;
 }
 
 input:focus,
